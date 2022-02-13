@@ -1,0 +1,136 @@
+
+:root {
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),url(background2.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    
+ }
+
+ 
+ h1 {
+   font-weight: 450;
+   line-height: 1.2;
+   font-size:  1.5rem;
+ }
+ p {
+     font-size: 1.5rem;
+ }
+
+ label {
+     display: flex;
+     align-items: center;
+     font-size: 1.4;
+     margin: auto;
+ }
+ 
+
+ input,
+ button,
+ select,
+ textarea {
+     margin: 0;
+     font-family: inherit;
+     font-size: inherit;
+     line-height: inherit;
+ }
+
+ button{
+     border: none;
+ }
+
+ #title{
+     text-align: center;
+ }
+ .container {
+    width: 100%;
+    margin:auto;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+
+    
+
+    @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+      }
+
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    border-radius: 0.25rem;
+    padding: 20px;
+    width:100%;
+    color: aliceblue;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  
+  @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
+  
+
+#form-group {
+    display: block;
+    width: 100%;
+    height:auto;
+    padding:  0.75rem ;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#textarea {
+    min-height: 120px;
+    width: 75%;
+    padding: 0.62rem;
+    resize: vertical;
+}
+
+#conclusion{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgb(74, 236, 74);
+    border-radius: 2px;
+}
+
+.input-radio {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+#user-pick {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;   
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="icon" href="/Survey/love.png">
+    <link rel="stylesheet" href="/Survey/survey.css">
+    <script src="/Survey/survey.js"></script>
+</head>
+<body>
+   <div class="container">
+          <div id="header">
+            <header>
+                <h1 id="title">bonful's surveyForm</h1>
+                <p id="description">Thank you for taking the time to check this out, have a good time!</p>
+            </header>
+          </div>
+       <form action="survey" id="survey-form">
+           <div id="content">
+             <div id="form-group">
+                <label id="name-label" for="name">Name</label>
+                   <input type="text" id="name" placeholder="Enter your name" required>
+             </div>
+             <div id="form-group">
+                 <label  id="email-label" for="email" >Email</label>
+                 <input type="email" id="email" placeholder="Enter your email" required>
+             </div>
+              <div id="form-group">
+                  <label id="age-label" for="age">Age <span id="clue">(Optional)</span></label>
+                  <input type="number"  maxlength="20" id="number" min="10" max="10" placeholder="Age">        
+                 </div>
+            </div>
+          <p>What's your current role?</p>
+            <div id="form-group">
+                <select name="role" id="dropdown">
+                    <option disabled value for selected>Current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="parent">Parent</option>
+                    <option value="useless">Please I am useless!</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+           <p>Do you believe in love at first sight?</p>
+            <div id="form-group">
+                <label for="definetely">Definitely
+                    <input type="radio"
+                    id="user-prefrence" checked>
+                </label>
+                <br>
+                <label for="maybe">Maybe
+                    <input type="radio"  id="user-prefrence">
+                </label>
+                <br>
+                <label for="yuck,no!">Yuck, No!
+                    <input type="radio" id="user-prefrence">
+                </label>
+            </div>
+            <p>What's your favorite color?</p>
+            <div id="form-group">
+              <select name="color" id="color">
+                  <option disabled for selected value>Favorite color</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="pink">Pink</option>
+                  <option value="white">White</option>
+                  <option value="black">Black</option>
+                  <option value="other">Other</option>
+              </select>
+            </div> 
+            <br>
+            <p>What would you get for someone on valentine's day <span class="clue">(Check all that apply)</span></p>
+            <div id="form-group">
+                <label for="love-card">Love-Card
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <label for="chocolate">Box of chocolate
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <label for="flowers">Flowers
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <label for="teddy bear">Teddy bear
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <label for="money">Money
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <label for="no">Chale I'm gnashing
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <label for="other">Other
+                    <input type="checkbox"  id="user-pick">
+                </label> <br>
+                <textarea name="other" id="textarea" cols="30" rows="10" placeholder="please specify" required></textarea>
+            </div>
+
+            <br>
+
+          <p>Please let me know your comments and suggestion.</p>
+    
+            <div id="form-group">
+                <textarea name="" id="textarea" cols="30" rows="10" placeholder="enter your comments or suggestions here..." required></textarea>
+            </div> <br>
+            <div id="form-group">
+                <button onclick="myFunction()" type="button" id="conclusion">Submit</button>
+            </div>
+       </form>
+   </div>
+</body>
+</html>
